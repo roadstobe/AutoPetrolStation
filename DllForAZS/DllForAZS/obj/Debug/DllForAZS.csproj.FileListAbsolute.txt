@@ -1,0 +1,7 @@
+C:\Users\roads\source\repos\DllForAZS\DllForAZS\bin\Debug\DllForAZS.dll.config
+C:\Users\roads\source\repos\DllForAZS\DllForAZS\bin\Debug\DllForAZS.dll
+C:\Users\roads\source\repos\DllForAZS\DllForAZS\bin\Debug\DllForAZS.pdb
+C:\Users\roads\source\repos\DllForAZS\DllForAZS\obj\Debug\DllForAZS.csprojAssemblyReference.cache
+C:\Users\roads\source\repos\DllForAZS\DllForAZS\obj\Debug\DllForAZS.csproj.CoreCompileInputs.cache
+C:\Users\roads\source\repos\DllForAZS\DllForAZS\obj\Debug\DllForAZS.dll
+C:\Users\roads\source\repos\DllForAZS\DllForAZS\obj\Debug\DllForAZS.pdb

@@ -1,0 +1,14 @@
+C:\Users\roads\source\repos\AZS\AZS\bin\Debug\AZS.exe.config
+C:\Users\roads\source\repos\AZS\AZS\bin\Debug\AZS.exe
+C:\Users\roads\source\repos\AZS\AZS\bin\Debug\AZS.pdb
+C:\Users\roads\source\repos\AZS\AZS\bin\Debug\DllForAZS.dll
+C:\Users\roads\source\repos\AZS\AZS\bin\Debug\DllForAZS.pdb
+C:\Users\roads\source\repos\AZS\AZS\bin\Debug\DllForAZS.dll.config
+C:\Users\roads\source\repos\AZS\AZS\obj\Debug\AZS.csprojAssemblyReference.cache
+C:\Users\roads\source\repos\AZS\AZS\obj\Debug\AZS.MainForm.resources
+C:\Users\roads\source\repos\AZS\AZS\obj\Debug\AZS.Properties.Resources.resources
+C:\Users\roads\source\repos\AZS\AZS\obj\Debug\AZS.csproj.GenerateResource.cache
+C:\Users\roads\source\repos\AZS\AZS\obj\Debug\AZS.csproj.CoreCompileInputs.cache
+C:\Users\roads\source\repos\AZS\AZS\obj\Debug\AZS.csproj.CopyComplete
+C:\Users\roads\source\repos\AZS\AZS\obj\Debug\AZS.exe
+C:\Users\roads\source\repos\AZS\AZS\obj\Debug\AZS.pdb
