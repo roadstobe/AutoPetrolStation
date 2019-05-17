@@ -13,7 +13,6 @@ namespace AZS
     public partial class MainForm : Form
     {
         List<Petrol> petrols = new List<Petrol>();
-        List<Product> products = new List<Product>();
         public MainForm()
         {
             InitializeComponent();
