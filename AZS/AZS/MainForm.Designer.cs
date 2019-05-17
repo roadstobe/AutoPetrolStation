@@ -71,8 +71,10 @@
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.Bill = new DllForAZS.Price();
             this.button1 = new System.Windows.Forms.Button();
+            this.listBoxBills = new System.Windows.Forms.ListBox();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
+            this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.groupBoxAPS.SuspendLayout();
@@ -94,6 +96,10 @@
             // splitContainer1.Panel1
             // 
             this.splitContainer1.Panel1.Controls.Add(this.tableLayoutPanel1);
+            // 
+            // splitContainer1.Panel2
+            // 
+            this.splitContainer1.Panel2.Controls.Add(this.listBoxBills);
             this.splitContainer1.Size = new System.Drawing.Size(860, 318);
             this.splitContainer1.SplitterDistance = 649;
             this.splitContainer1.TabIndex = 0;
@@ -217,7 +223,7 @@
             this.comboBoxPetrol.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.comboBoxPetrol.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.comboBoxPetrol.FormattingEnabled = true;
-            this.comboBoxPetrol.Location = new System.Drawing.Point(127, 11);
+            this.comboBoxPetrol.Location = new System.Drawing.Point(127, 10);
             this.comboBoxPetrol.Name = "comboBoxPetrol";
             this.comboBoxPetrol.Size = new System.Drawing.Size(182, 24);
             this.comboBoxPetrol.Sorted = true;
@@ -664,6 +670,19 @@
             this.button1.TabIndex = 5;
             this.button1.Text = "Порахувати";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.Button1_Click);
+            // 
+            // listBoxBills
+            // 
+            this.listBoxBills.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.listBoxBills.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.listBoxBills.FormattingEnabled = true;
+            this.listBoxBills.ItemHeight = 16;
+            this.listBoxBills.Location = new System.Drawing.Point(0, 0);
+            this.listBoxBills.Name = "listBoxBills";
+            this.listBoxBills.Size = new System.Drawing.Size(207, 318);
+            this.listBoxBills.TabIndex = 0;
+            this.listBoxBills.SelectedIndexChanged += new System.EventHandler(this.ListBoxBills_SelectedIndexChanged);
             // 
             // MainForm
             // 
@@ -675,6 +694,7 @@
             this.Name = "MainForm";
             this.Text = "BestOil";
             this.splitContainer1.Panel1.ResumeLayout(false);
+            this.splitContainer1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
@@ -740,6 +760,7 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private DllForAZS.Price Bill;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ListBox listBoxBills;
     }
 }
 

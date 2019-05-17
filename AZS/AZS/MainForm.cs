@@ -13,7 +13,7 @@ namespace AZS
     public partial class MainForm : Form
     {
         List<Petrol> petrols = new List<Petrol>();
-        List<Bill> bills = new List<Bill>();
+        List<Product> products = new List<Product>();
         public MainForm()
         {
             InitializeComponent();
@@ -41,6 +41,8 @@ namespace AZS
         private void ComboBoxPetrol_SelectedIndexChanged(object sender, EventArgs e)
         {
             pricePetrol.Text = $"{comboBoxPetrol.SelectedValue}";
+            priceCount.Text = "";
+            priceAmoung.Text = "";
         }
 
         private void RadioButtonCount_CheckedChanged(object sender, EventArgs e)
@@ -204,6 +206,102 @@ namespace AZS
             Bill.Text = $"{bill}";
         }
 
+        private void Button1_Click(object sender, EventArgs e)
+        {
+            List<Product> p = new List<Product>();
+            if (double.Parse(labelBill.Text) > 0)
+            {
+                string petrol;
+                double pricePetrol;
+                double petrolAmount ;
+                double amount;
+                if (radioButtonCount.Checked == false)
+                {
+                    petrolAmount = double.Parse(labelLiters.Text);
+                }
+                else
+                    petrolAmount = double.Parse(priceCount.Text);
+                petrol = comboBoxPetrol.SelectedItem.ToString();
+                pricePetrol = (double)comboBoxPetrol.SelectedValue;
+                amount = double.Parse(labelBill.Text);
+                p.Add(new Product(petrol, petrolAmount, pricePetrol, amount));
+                listBoxBills.Items.Add(p);
+            }
+
+            
+            string name;
+            double price, count, amountMoney;
+            if(checkBox1.Checked == true)
+            {
+                try
+                {
+                    name = checkBox1.Text;
+                    price = double.Parse(HotDocPrice.Text);
+                    count = double.Parse(priceHotDoc.Text);
+                    amountMoney = double.Parse(AmountHotDog.Text);
+                    p.Add(new Product(name, count, price, amountMoney));
+                }
+                catch { MessageBox.Show("Кількість товару рівна нулю"); }
+            }
+            if(checkBox2.Checked == true)
+            {
+                try
+                {
+                    name = checkBox2.Text;
+                    price = double.Parse(Gamburger.Text);
+                    count = double.Parse(priceGamburger.Text);
+                    amountMoney = double.Parse(AnountHambur.Text);
+                    p.Add(new Product(name, count, price, amountMoney));
+                }
+                catch { MessageBox.Show("Кількість товару рівна нулю"); }
+            }
+            if(checkBox3.Checked == true)
+            {
+                try
+                {
+                    name = checkBox3.Text;
+                    price = double.Parse(Potato.Text);
+                    count = double.Parse(pricePotato.Text);
+                    amountMoney = double.Parse(AmountPotato.Text);
+                    p.Add(new Product(name, count, price, amountMoney));
+                }
+                catch { MessageBox.Show("Кількість товару рівна нулю"); }
+            }
+            if(checkBox4.Checked == true)
+            {
+                try
+                {
+                    name = checkBox4.Text;
+                    price = double.Parse(CocaCola.Text);
+                    count = double.Parse(priceCocaCola.Text);
+                    amountMoney = double.Parse(AmountCocaCola.Text);
+                    p.Add(new Product(name, count, price, amountMoney));
+                }
+                catch { MessageBox.Show("Кількість товару рівна нулю"); }
+            }
+            if (p.Count > 0)
+            {
+                foreach (var item in p)
+                {
+                    listBoxBills.Items.Add(item);
+                }
+                listBoxBills.Items.Add($"--------Всього до спалти--------\n{double.Parse(Bill.Text)}");
+            }
+            else
+                MessageBox.Show("нема що рахувати :)");
+            checkBox1.Checked = false;
+            checkBox2.Checked = false;
+            checkBox3.Checked = false;
+            checkBox4.Checked = false;
+            priceCount.Text = "";
+            priceAmoung.Text = "";
+
+        }
+
+        private void ListBoxBills_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            MessageBox.Show($"{listBoxBills.SelectedItem}");
+        }
     }
     
 }

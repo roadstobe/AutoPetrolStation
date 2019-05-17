@@ -12,3 +12,17 @@ C:\Users\roads\source\repos\AZS\AZS\obj\Debug\AZS.csproj.CoreCompileInputs.cache
 C:\Users\roads\source\repos\AZS\AZS\obj\Debug\AZS.csproj.CopyComplete
 C:\Users\roads\source\repos\AZS\AZS\obj\Debug\AZS.exe
 C:\Users\roads\source\repos\AZS\AZS\obj\Debug\AZS.pdb
+X:\ProjectsC#\APS\AZS\AZS\bin\Debug\AZS.exe.config
+X:\ProjectsC#\APS\AZS\AZS\bin\Debug\AZS.exe
+X:\ProjectsC#\APS\AZS\AZS\bin\Debug\AZS.pdb
+X:\ProjectsC#\APS\AZS\AZS\bin\Debug\DllForAZS.dll
+X:\ProjectsC#\APS\AZS\AZS\bin\Debug\DllForAZS.pdb
+X:\ProjectsC#\APS\AZS\AZS\bin\Debug\DllForAZS.dll.config
+X:\ProjectsC#\APS\AZS\AZS\obj\Debug\AZS.csprojAssemblyReference.cache
+X:\ProjectsC#\APS\AZS\AZS\obj\Debug\AZS.MainForm.resources
+X:\ProjectsC#\APS\AZS\AZS\obj\Debug\AZS.Properties.Resources.resources
+X:\ProjectsC#\APS\AZS\AZS\obj\Debug\AZS.csproj.GenerateResource.cache
+X:\ProjectsC#\APS\AZS\AZS\obj\Debug\AZS.csproj.CoreCompileInputs.cache
+X:\ProjectsC#\APS\AZS\AZS\obj\Debug\AZS.csproj.CopyComplete
+X:\ProjectsC#\APS\AZS\AZS\obj\Debug\AZS.exe
+X:\ProjectsC#\APS\AZS\AZS\obj\Debug\AZS.pdb
